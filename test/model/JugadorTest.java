@@ -80,7 +80,7 @@ public class JugadorTest {
         System.out.println("a\u00f1adirEjercitos");
         Jugador instance = new Jugador("marta", 6);
         int prueba= instance.getNumeroDeEjercitos();
-        instance.añadirEjercitos();
+        instance.añadirEjercitos(2);
         int prueba1=instance.getNumeroDeEjercitos();
         assertNotEquals(prueba, prueba1);
         // TODO review the generated test code and remove the default call to fail.

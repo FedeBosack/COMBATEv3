@@ -55,8 +55,8 @@ public class Jugador {
 		territoriosOcupados.trimToSize();
 	}
 
-        public void añadirEjercitos(){
-            ejercitos++;
+        public void añadirEjercitos(int a){
+            ejercitos +=a;
         }
         
         public void ejercitoPerdido(){

@@ -7,6 +7,7 @@ import model.Jugador;
 import model.Territorio;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import strategy.SituacionBehavior;
 import view.Observer;
 
 
@@ -19,9 +20,8 @@ public class JuegoCombate implements Subject
         static public ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
         static public ArrayList<Observer> observadores  = new ArrayList<Observer>();
        
-        public Jugador curPlayer;
-        public Jugador defender;
         
+        private SituacionBehavior situacion;
         public Jugador activo;
         private int estado;
         public Territorio aTerritorio;
@@ -29,7 +29,7 @@ public class JuegoCombate implements Subject
         public int defNum = 0;
         public int attNum = 0;
         public int iter = 0;
-        public boolean drawn;
+        
        
 
     public boolean agregarJugador(String nm){
@@ -125,7 +125,7 @@ public class JuegoCombate implements Subject
         switch(estado) 
         {
 	case 0:
-	activo.añadirEjercitos();
+	activo.añadirEjercitos(0);
         System.out.println("Estoy en "+territorios.get(idterritorio).getNombre());
         territorios.get(idterritorio).setEjercitos(eje);
         territorios.get(idterritorio).setJugador(activo);
