@@ -38,7 +38,7 @@ public class TerritorioTest {
         System.out.println("setEjercito");
         int a = 5;
         Territorio instance = new Territorio(1, 2);
-        instance.setEjercito(a);
+        instance.setEjercitos(a);
         // TODO review the generated test code and remove the default call to fail.
        assertNotNull(instance.getEjercitos());
     }
