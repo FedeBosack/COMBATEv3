@@ -154,14 +154,17 @@ public class JuegoCombate implements Subject
 	break;
 	}
     }  
+        @Override
     public void registerObserver(Observer o) {
         observadores.add(o);
     }
 
+        @Override
     public void removeObserver(Observer o) {
         observadores.remove(o);
     }
 
+        @Override
     public void notifyObservers() {
         for(Observer observador : observadores)
         {
