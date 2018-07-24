@@ -1,7 +1,11 @@
 package model;
 
+import controller.Subject;
+import static controller.JuegoCombate.observadores;
+import static controller.JuegoCombate.territorios;
 import java.awt.List;
 import java.util.ArrayList;
+import view.Observer;
 
 
 public class Jugador {
@@ -10,6 +14,8 @@ public class Jugador {
 	private int indice;
         private ArrayList<Territorio> territoriosOcupados;
 	private int ejercitos;
+        
+        Thread thread =new Thread();//otro hilo que uso como timer
 
 	
 	public Jugador(String nm, int i) 
@@ -56,6 +62,5 @@ public class Jugador {
         public void ejercitoPerdido(){
             ejercitos--;
         }
-	
-	
+        
 }

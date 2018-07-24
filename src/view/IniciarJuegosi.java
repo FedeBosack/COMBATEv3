@@ -8,6 +8,8 @@ package view;
 
 import controller.JuegoCombate;
 import static controller.JuegoCombate.jugadores;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.Jugador;
 
@@ -15,7 +17,7 @@ import model.Jugador;
  *
  * @author Notebook
  */
-public class IniciarJuegosi extends javax.swing.JFrame {
+public class IniciarJuegosi extends javax.swing.JFrame  {
 
     /**
      * Creates new form IniciarJuegosi
@@ -183,10 +185,13 @@ public class IniciarJuegosi extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             setVisible(false);
-            MapaMundoInterfaz.MostrarGUI(this);
+            MapaMundoInterfaz a = MapaMundoInterfaz.MostrarGUI(this);
+         
+            
             juego1.agregarTerritorios(18);
             juego1.notifyObservers();
             juego1.EstadoJuego();
+            juego1.registerObserver(a);
             
             
     }//GEN-LAST:event_jButton1ActionPerformed

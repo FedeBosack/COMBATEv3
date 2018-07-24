@@ -1,15 +1,11 @@
 package controller;
 
-import model.Continente;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import model.Jugador;
 import model.Territorio;
-import java.awt.List;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.ArrayList;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 import view.Observer;
 
@@ -18,9 +14,11 @@ import view.Observer;
 public class JuegoCombate implements Subject
 {
         
-	static public ArrayList<Territorio> territorios  = new ArrayList<Territorio>();
+	//static public ArrayList<Territorio> territorios  = new ArrayList<Territorio>();
+        static public  ArrayList<Territorio> territorios = new ArrayList<Territorio>();
         static public ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
         static public ArrayList<Observer> observadores  = new ArrayList<Observer>();
+       
         public Jugador curPlayer;
         public Jugador defender;
         
@@ -43,44 +41,71 @@ public class JuegoCombate implements Subject
                 return true;
         }
     public boolean agregarTerritorios(int cantidad){
-            int cl;
-        
-            for(int i=1 ; i<=cantidad; i++)
-            {    
-            cl=2;
-
-            Territorio t = new Territorio(i,cl);
-            territorios.add(t);
-            t.setEjercito(i);
-        }
+            int cl=2;
+            int i=1;
+            String fichero = null;
+            if(cantidad==18)
+            {
+                System.out.println("mapa mundo");
+                fichero ="C:\\Users\\Notebook\\Google Drive\\Facultad drive 02 SII\\5°año (2018)\\1°SEMESTRE\\Ing de software(2018)\\FINAL\\ULTIMOOO\\combatev3\\anda - copia - copia\\combatev2-master\\src\\controller\\mapamundo.txt";
+            } else { 
+                
+            }
+            try {
+            FileInputStream fis = new FileInputStream(fichero);
+            InputStreamReader isr = new InputStreamReader(fis,"utf8");
+            BufferedReader br = new BufferedReader(isr);
+            String linea;
+            while((linea = br.readLine()) != null)
+            {
+                //System.out.println(linea);
+                Territorio t = new Territorio(i,cl,linea);
+                territorios.add(t);
+                i++;
+                System.out.println("territorio id:"+ i +" y nombre: "+linea+"  agregado");
+            }
+             fis.close();
+                }
+            catch(Exception e) {
+      System.out.println("Excepcion leyendo fichero "+ fichero + ": " + e);
+         }
+            System.out.println("Territorios agregados");
         return true;
     }
     public void EstadoJuego()
     {
+        //thread.start();
+        
         for(int i=0;i<6;i++)
         {   
+            
             estado=i;
             if(i==0)
             {
-               JOptionPane.showMessageDialog(null,"Binvenido a Combate - Cada Jugador debera agregar 5 ejercitos"); 
+               JOptionPane.showMessageDialog(null,"Binvenido a Combate - Cada Jugador debera agregar 5 ejercitos");            
             }
-            
-            
-            
-        
-        }
-        
-        for(Jugador jug : jugadores)
+            System.out.println("hola");
+            //Iterator<Jugador> it = jugadores.iterator();
+            for(Jugador jug : jugadores)
             {
+                
                 activo=jug;
-                JOptionPane.showMessageDialog(null,"Jugador "+jug.getNombre()+" tu turno");
-                while(jug.getNumeroDeEjercitos()<=2)//se va a cambiar
-                {
-                    
-                    //System.out.printf("faltan agregar territorios");;
-                }
+                /*JOptionPane pane = new JOptionPane("Jugador "+activo.getNombre()+" tu turno");
+                // Configure via set methods
+                JDialog dialog = pane.createDialog(null, "No cerrar hasta terminar la tarea");
+                // the line below is added to the example from the docs
+                dialog.setModal(false); // esto dice: no bloquear componentes de fondo
+                dialog.show();*/
+                String pais;
+                int numpais;
+                pais=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar numero de pais que quiere poner ejercito");
+                numpais = Integer.parseInt(pais);
+                JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" cantidad de ejercitos que quiera poner en el pais "+territorios.get(numpais).getNombre());
+                notifyObservers();
                 
             }
+    
+        } 
     }
 
     public void Jugando(int idterritorio)
@@ -116,19 +141,15 @@ public class JuegoCombate implements Subject
 		//no hacer nada
 	break;
 	}
-    }   
-
-    @Override
+    }  
     public void registerObserver(Observer o) {
         observadores.add(o);
     }
 
-    @Override
     public void removeObserver(Observer o) {
         observadores.remove(o);
     }
 
-    @Override
     public void notifyObservers() {
         for(Observer observador : observadores)
         {
