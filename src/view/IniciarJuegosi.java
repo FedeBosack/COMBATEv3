@@ -187,11 +187,11 @@ public class IniciarJuegosi extends javax.swing.JFrame  {
             setVisible(false);
             MapaMundoInterfaz a = MapaMundoInterfaz.MostrarGUI(this);
          
-            
+            juego1.registerObserver(a);
             juego1.agregarTerritorios(18);
             juego1.notifyObservers();
             juego1.EstadoJuego();
-            juego1.registerObserver(a);
+            
             
             
     }//GEN-LAST:event_jButton1ActionPerformed

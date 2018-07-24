@@ -47,7 +47,7 @@ public class JuegoCombate implements Subject
             if(cantidad==18)
             {
                 System.out.println("mapa mundo");
-                fichero ="C:\\Users\\Notebook\\Google Drive\\Facultad drive 02 SII\\5°año (2018)\\1°SEMESTRE\\Ing de software(2018)\\FINAL\\ULTIMOOO\\combatev3\\anda - copia - copia\\combatev2-master\\src\\controller\\mapamundo.txt";
+                fichero ="src\\controller\\mapamundo.txt";
             } else { 
                 
             }
@@ -83,7 +83,7 @@ public class JuegoCombate implements Subject
             estado=i;
             if(i==0)
             {
-               JOptionPane.showMessageDialog(null,"Binvenido a Combate - Cada Jugador debera agregar 5 ejercitos");            
+               JOptionPane.showMessageDialog(null,"Bienvenidos a Combate - Cada Jugador debera agregar 5 ejercitos");            
             }
             System.out.println("hola");
             //Iterator<Jugador> it = jugadores.iterator();
@@ -103,15 +103,15 @@ public class JuegoCombate implements Subject
                 int cant;
                 int pais;
                 int ejercitos;
-                Scant=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de paices donde querra poner ejercitos");
+                Scant=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de Territorios donde querra poner ejercitos");
                 cant = Integer.parseInt(Scant);
                 for(int p=0;p<cant;p++)
                 {
-                Spais=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar el numero del pais donde quiera poner ejercito");
+                Spais=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar el numero del Territorio donde quiera poner ejercito");
                 pais = Integer.parseInt(Spais);
-                Sejercitos=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de ejercitos que quiera poner en el pais "+territorios.get(pais-1).getNombre());
+                Sejercitos=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de ejercitos que quiera poner en el Territorio "+territorios.get(pais-1).getNombre());
                 ejercitos = Integer.parseInt(Sejercitos);
-                Jugando(pais,ejercitos);
+                Jugando(pais-1,ejercitos);
                 notifyObservers();
                 }
                 
@@ -126,9 +126,11 @@ public class JuegoCombate implements Subject
         {
 	case 0:
 	activo.añadirEjercitos();
-        territorios.get(idterritorio-1).setEjercitos(eje);
-        territorios.get(idterritorio-1).setJugador(activo);
-        System.out.printf("ESTADO 0");//poner 10 fichas
+        System.out.println("Estoy en "+territorios.get(idterritorio).getNombre());
+        territorios.get(idterritorio).setEjercitos(eje);
+        territorios.get(idterritorio).setJugador(activo);
+        notifyObservers();
+        System.out.println("ESTADO 0");//poner 10 fichas
         
        
 	break;

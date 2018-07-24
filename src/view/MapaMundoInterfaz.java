@@ -23,8 +23,8 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
         ijs=juego;
         initComponents();
         
-        islandia.setText("hola probando");
-        brasil.setText("soy brasil");
+        colombia.setText("hola probando");
+        //brasil.setText("soy brasil");
         
     }
       public static MapaMundoInterfaz MostrarGUI(IniciarJuegosi juego) 
@@ -49,17 +49,83 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
     private void initComponents() {
 
         brasil = new javax.swing.JLabel();
+        colombia = new javax.swing.JLabel();
         islandia = new javax.swing.JLabel();
+        groenlandia = new javax.swing.JLabel();
+        canada = new javax.swing.JLabel();
+        yukon = new javax.swing.JLabel();
+        alaska = new javax.swing.JLabel();
+        oregon = new javax.swing.JLabel();
+        labrador = new javax.swing.JLabel();
+        terranova = new javax.swing.JLabel();
+        california = new javax.swing.JLabel();
+        nuevayork = new javax.swing.JLabel();
+        mexico = new javax.swing.JLabel();
+        peru = new javax.swing.JLabel();
+        chile = new javax.swing.JLabel();
+        argentina = new javax.swing.JLabel();
+        uruguay = new javax.swing.JLabel();
+        antartida = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        brasil.setBackground(new java.awt.Color(255, 255, 255));
         brasil.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        getContentPane().add(brasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 50, 20));
+        getContentPane().add(brasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 70, 20));
+
+        colombia.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(colombia, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 50, 20));
 
         islandia.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        getContentPane().add(islandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 50, 20));
+        getContentPane().add(islandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 60, 20));
+
+        groenlandia.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(groenlandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 70, 20));
+
+        canada.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(canada, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 50, 20));
+
+        yukon.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(yukon, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 70, 20));
+
+        alaska.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(alaska, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 60, 20));
+
+        oregon.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(oregon, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 70, 20));
+
+        labrador.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(labrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 60, 20));
+
+        terranova.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(terranova, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 60, 20));
+
+        california.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(california, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 60, 20));
+
+        nuevayork.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(nuevayork, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 70, 20));
+
+        mexico.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(mexico, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 70, 20));
+
+        peru.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(peru, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 50, 20));
+
+        chile.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(chile, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 60, 20));
+
+        argentina.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(argentina, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 440, 70, 20));
+
+        uruguay.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(uruguay, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 400, 60, 20));
+
+        antartida.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        antartida.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(antartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 490, 70, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/combatesi/UltimoMapa Combate.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -68,36 +134,53 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel alaska;
+    private javax.swing.JLabel antartida;
+    private javax.swing.JLabel argentina;
     private javax.swing.JLabel brasil;
+    private javax.swing.JLabel california;
+    private javax.swing.JLabel canada;
+    private javax.swing.JLabel chile;
+    private javax.swing.JLabel colombia;
+    private javax.swing.JLabel groenlandia;
     private javax.swing.JLabel islandia;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel labrador;
+    private javax.swing.JLabel mexico;
+    private javax.swing.JLabel nuevayork;
+    private javax.swing.JLabel oregon;
+    private javax.swing.JLabel peru;
+    private javax.swing.JLabel terranova;
+    private javax.swing.JLabel uruguay;
+    private javax.swing.JLabel yukon;
     // End of variables declaration//GEN-END:variables
 //lo que hace el update es asignarle a cada boton la info del territorio que necesite
     
     public void update(ArrayList <Territorio> territorios) {
 
-                brasil.setText("hola probando");
-		//islandia.setText(String.valueOf(territorios.get(1).getEjercitos()));
-              //  groenlandia.setText("groenlandia");
-
-		/*jButton10.setText(String.valueOf(territorios.get(10).getEjercitos()));
-		jButton11.setText(String.valueOf(territorios.get(11).getEjercitos()));
-		jButton12.setText(String.valueOf(territorios.get(12).getEjercitos()));
-		jButton13.setText(String.valueOf(territorios.get(13).getEjercitos()));
-        jButton14.setText(String.valueOf(territorios.get(14).getEjercitos()));
-        jButton15.setText(String.valueOf(territorios.get(15).getEjercitos()));
-        jButton16.setText(String.valueOf(territorios.get(16).getEjercitos()));
-        jButton17.setText(String.valueOf(territorios.get(17).getEjercitos()));
-        jButton18.setText(String.valueOf(territorios.get(18).getEjercitos()));
-        jButton2.setText(String.valueOf(territorios.get(2).getEjercitos()));
-        jButton3.setText(String.valueOf(territorios.get(3).getEjercitos()));
-        jButton4.setText(String.valueOf(territorios.get(4).getEjercitos()));
-        jButton5.setText(String.valueOf(territorios.get(5).getEjercitos()));
-        jButton6.setText(String.valueOf(territorios.get(6).getEjercitos()));
-        jButton7.setText(String.valueOf(territorios.get(7).getEjercitos()));
-        jButton8.setText(String.valueOf(territorios.get(8).getEjercitos()));
-        jButton9.setText(String.valueOf(territorios.get(9).getEjercitos()));
-		*/
+                //System.out.println(territorios.get(13).getJugador().getNombre());
+                
+		groenlandia.setText("J: "+String.valueOf(territorios.get(0).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(0).getEjercitos()));
+		canada.setText("J: "+String.valueOf(territorios.get(1).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(1).getEjercitos()));
+                yukon.setText("J: "+String.valueOf(territorios.get(2).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(2).getEjercitos()));
+                alaska.setText("J: "+String.valueOf(territorios.get(3).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(3).getEjercitos()));
+                oregon.setText("J: "+String.valueOf(territorios.get(4).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(4).getEjercitos()));
+                labrador.setText("J: "+String.valueOf(territorios.get(5).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(5).getEjercitos()));
+                islandia.setText("J: "+String.valueOf(territorios.get(6).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(6).getEjercitos()));
+                terranova.setText("J: "+String.valueOf(territorios.get(7).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(7).getEjercitos()));
+                california.setText("J: "+String.valueOf(territorios.get(8).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(8).getEjercitos()));
+                nuevayork.setText("J: "+String.valueOf(territorios.get(9).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(9).getEjercitos()));
+                mexico.setText("J: "+String.valueOf(territorios.get(10).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(10).getEjercitos()));
+                colombia.setText("J: "+String.valueOf(territorios.get(11).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(11).getEjercitos()));
+                brasil.setText("J: "+String.valueOf(territorios.get(12).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(12).getEjercitos()));
+                peru.setText("J: "+String.valueOf(territorios.get(13).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(13).getEjercitos()));
+                chile.setText("J: "+String.valueOf(territorios.get(14).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(14).getEjercitos()));
+                argentina.setText("J: "+String.valueOf(territorios.get(15).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(15).getEjercitos()));
+                uruguay.setText("J: "+String.valueOf(territorios.get(16).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(16).getEjercitos()));
+                antartida.setText("J: "+String.valueOf(territorios.get(17).getJugador().getNombre())+" E: "+String.valueOf(territorios.get(17).getEjercitos()));
+                
+                
+                
 				
      }
 }

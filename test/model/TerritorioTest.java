@@ -37,7 +37,8 @@ public class TerritorioTest {
     public void testSetEjercito() {
         System.out.println("setEjercito");
         int a = 5;
-        Territorio instance = new Territorio(1, 2);
+        String territorio = "uruguay";
+        Territorio instance = new Territorio(1, 2,territorio);
         instance.setEjercitos(a);
         // TODO review the generated test code and remove the default call to fail.
        assertNotNull(instance.getEjercitos());
@@ -50,7 +51,8 @@ public class TerritorioTest {
     @Test
     public void testGetId() {
         System.out.println("getId");
-        Territorio instance = new Territorio(5, 3);
+        String territorio = "uruguay";
+        Territorio instance = new Territorio(5, 3,territorio);
         int expResult = 5;
         int result = instance.getId();
         assertEquals(expResult, result);

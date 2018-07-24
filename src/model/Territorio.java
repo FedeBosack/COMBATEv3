@@ -16,7 +16,7 @@ public class Territorio
         private int x;
         private int y;
 	private String nombre;
-	private Jugador jugador;
+	private Jugador jugador=new Jugador(null,-1);
 	private int ejercitos;
 	private int continente;//todavia no lo usamos
 	private int[] limitrofes;//id de los paises limitrofes
@@ -27,12 +27,14 @@ public class Territorio
 		//continente = c;
 		ejercitos = 0; //empieza vacio
 		limitrofes = new int[cl];//cantidad de paises limitrofes
-                jugador = new Jugador(null,-1);
+                //jugador = p;
 	}
 
 	
 	public void setJugador(Jugador p){
 		jugador = p;
+                System.out.println("El territorio le pertenece a "+p.getNombre());
+                
 	}
 
         public void setLimitrofe(int[] a){
@@ -41,6 +43,7 @@ public class Territorio
 	
 	public void setEjercitos(int a){
 		ejercitos = +a;
+                System.out.println("agregue "+a+" ejercitos");
 	}
 	
 	public int getId(){
