@@ -85,7 +85,7 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
         getContentPane().add(groenlandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 70, 20));
 
         canada.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        getContentPane().add(canada, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 50, 20));
+        getContentPane().add(canada, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 80, 20));
 
         yukon.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         getContentPane().add(yukon, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 70, 20));
