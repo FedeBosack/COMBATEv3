@@ -39,8 +39,8 @@ public class Territorio
             limitrofes = a;
         }
 	
-	public void setEjercito(int a){
-		ejercitos = a;
+	public void setEjercitos(int a){
+		ejercitos = +a;
 	}
 	
 	public int getId(){

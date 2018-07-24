@@ -61,8 +61,9 @@ public class JuegoCombate implements Subject
                 //System.out.println(linea);
                 Territorio t = new Territorio(i,cl,linea);
                 territorios.add(t);
-                i++;
+                
                 System.out.println("territorio id:"+ i +" y nombre: "+linea+"  agregado");
+                i++;
             }
              fis.close();
                 }
@@ -96,26 +97,37 @@ public class JuegoCombate implements Subject
                 // the line below is added to the example from the docs
                 dialog.setModal(false); // esto dice: no bloquear componentes de fondo
                 dialog.show();*/
-                String pais;
-                int numpais;
-                pais=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar numero de pais que quiere poner ejercito");
-                numpais = Integer.parseInt(pais);
-                JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" cantidad de ejercitos que quiera poner en el pais "+territorios.get(numpais).getNombre());
+                String Scant;
+                String Spais;
+                String Sejercitos;
+                int cant;
+                int pais;
+                int ejercitos;
+                Scant=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de paices donde querra poner ejercitos");
+                cant = Integer.parseInt(Scant);
+                for(int p=0;p<cant;p++)
+                {
+                Spais=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar el numero del pais donde quiera poner ejercito");
+                pais = Integer.parseInt(Spais);
+                Sejercitos=JOptionPane.showInputDialog(null,"Jugador "+jug.getNombre()+" indicar la cantidad de ejercitos que quiera poner en el pais "+territorios.get(pais-1).getNombre());
+                ejercitos = Integer.parseInt(Sejercitos);
+                Jugando(pais,ejercitos);
                 notifyObservers();
+                }
                 
             }
     
         } 
     }
 
-    public void Jugando(int idterritorio)
+    public void Jugando(int idterritorio,int eje)
    {
         switch(estado) 
         {
 	case 0:
 	activo.añadirEjercitos();
-        territorios.get(idterritorio).setEjercito(1);
-        territorios.get(idterritorio).setJugador(activo);
+        territorios.get(idterritorio-1).setEjercitos(eje);
+        territorios.get(idterritorio-1).setJugador(activo);
         System.out.printf("ESTADO 0");//poner 10 fichas
         
        

@@ -23,7 +23,8 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
         ijs=juego;
         initComponents();
         
-        //islandia.setText("hola probando");
+        islandia.setText("hola probando");
+        brasil.setText("soy brasil");
         
     }
       public static MapaMundoInterfaz MostrarGUI(IniciarJuegosi juego) 
@@ -47,321 +48,15 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        groenlandia = new javax.swing.JPanel();
-        canada = new javax.swing.JPanel();
-        yukon = new javax.swing.JPanel();
-        alaska = new javax.swing.JPanel();
-        oregon = new javax.swing.JPanel();
-        labrador = new javax.swing.JPanel();
-        terranova = new javax.swing.JPanel();
-        california = new javax.swing.JPanel();
-        nuevayork = new javax.swing.JPanel();
-        mexico = new javax.swing.JPanel();
-        colombia = new javax.swing.JPanel();
-        brasil = new javax.swing.JPanel();
-        peru = new javax.swing.JPanel();
-        chile = new javax.swing.JPanel();
-        argentina = new javax.swing.JPanel();
-        uruguay = new javax.swing.JPanel();
-        antartida = new javax.swing.JPanel();
+        brasil = new javax.swing.JLabel();
         islandia = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        groenlandia.setBackground(new java.awt.Color(224, 184, 129));
-        groenlandia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        groenlandia.setForeground(new java.awt.Color(255, 204, 0));
-        groenlandia.setToolTipText("");
-
-        javax.swing.GroupLayout groenlandiaLayout = new javax.swing.GroupLayout(groenlandia);
-        groenlandia.setLayout(groenlandiaLayout);
-        groenlandiaLayout.setHorizontalGroup(
-            groenlandiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        groenlandiaLayout.setVerticalGroup(
-            groenlandiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(groenlandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 40, 30));
-
-        canada.setBackground(new java.awt.Color(224, 184, 129));
-        canada.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        canada.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout canadaLayout = new javax.swing.GroupLayout(canada);
-        canada.setLayout(canadaLayout);
-        canadaLayout.setHorizontalGroup(
-            canadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        canadaLayout.setVerticalGroup(
-            canadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(canada, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 40, 30));
-
-        yukon.setBackground(new java.awt.Color(224, 184, 129));
-        yukon.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        yukon.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout yukonLayout = new javax.swing.GroupLayout(yukon);
-        yukon.setLayout(yukonLayout);
-        yukonLayout.setHorizontalGroup(
-            yukonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        yukonLayout.setVerticalGroup(
-            yukonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(yukon, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 40, 30));
-
-        alaska.setBackground(new java.awt.Color(224, 184, 129));
-        alaska.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        alaska.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout alaskaLayout = new javax.swing.GroupLayout(alaska);
-        alaska.setLayout(alaskaLayout);
-        alaskaLayout.setHorizontalGroup(
-            alaskaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        alaskaLayout.setVerticalGroup(
-            alaskaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(alaska, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 40, 30));
-
-        oregon.setBackground(new java.awt.Color(224, 184, 129));
-        oregon.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        oregon.setForeground(new java.awt.Color(255, 204, 0));
-        oregon.setToolTipText("");
-        oregon.setName(""); // NOI18N
-
-        javax.swing.GroupLayout oregonLayout = new javax.swing.GroupLayout(oregon);
-        oregon.setLayout(oregonLayout);
-        oregonLayout.setHorizontalGroup(
-            oregonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        oregonLayout.setVerticalGroup(
-            oregonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(oregon, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 40, 30));
-        oregon.getAccessibleContext().setAccessibleName("");
-
-        labrador.setBackground(new java.awt.Color(224, 184, 129));
-        labrador.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        labrador.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout labradorLayout = new javax.swing.GroupLayout(labrador);
-        labrador.setLayout(labradorLayout);
-        labradorLayout.setHorizontalGroup(
-            labradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        labradorLayout.setVerticalGroup(
-            labradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(labrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, 40, 20));
-
-        terranova.setBackground(new java.awt.Color(224, 184, 129));
-        terranova.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        terranova.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout terranovaLayout = new javax.swing.GroupLayout(terranova);
-        terranova.setLayout(terranovaLayout);
-        terranovaLayout.setHorizontalGroup(
-            terranovaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        terranovaLayout.setVerticalGroup(
-            terranovaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(terranova, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 30, 30));
-
-        california.setBackground(new java.awt.Color(224, 184, 129));
-        california.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        california.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout californiaLayout = new javax.swing.GroupLayout(california);
-        california.setLayout(californiaLayout);
-        californiaLayout.setHorizontalGroup(
-            californiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        californiaLayout.setVerticalGroup(
-            californiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(california, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 30, 30));
-
-        nuevayork.setBackground(new java.awt.Color(224, 184, 129));
-        nuevayork.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        nuevayork.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout nuevayorkLayout = new javax.swing.GroupLayout(nuevayork);
-        nuevayork.setLayout(nuevayorkLayout);
-        nuevayorkLayout.setHorizontalGroup(
-            nuevayorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        nuevayorkLayout.setVerticalGroup(
-            nuevayorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(nuevayork, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 30, 20));
-
-        mexico.setBackground(new java.awt.Color(224, 184, 129));
-        mexico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        mexico.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout mexicoLayout = new javax.swing.GroupLayout(mexico);
-        mexico.setLayout(mexicoLayout);
-        mexicoLayout.setHorizontalGroup(
-            mexicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        mexicoLayout.setVerticalGroup(
-            mexicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(mexico, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 30, 30));
-
-        colombia.setBackground(new java.awt.Color(155, 224, 158));
-        colombia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        colombia.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout colombiaLayout = new javax.swing.GroupLayout(colombia);
-        colombia.setLayout(colombiaLayout);
-        colombiaLayout.setHorizontalGroup(
-            colombiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        colombiaLayout.setVerticalGroup(
-            colombiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(colombia, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 40, 20));
-
-        brasil.setBackground(new java.awt.Color(155, 224, 158));
-        brasil.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        brasil.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout brasilLayout = new javax.swing.GroupLayout(brasil);
-        brasil.setLayout(brasilLayout);
-        brasilLayout.setHorizontalGroup(
-            brasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        brasilLayout.setVerticalGroup(
-            brasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(brasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 40, 30));
-
-        peru.setBackground(new java.awt.Color(155, 224, 158));
-        peru.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        peru.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout peruLayout = new javax.swing.GroupLayout(peru);
-        peru.setLayout(peruLayout);
-        peruLayout.setHorizontalGroup(
-            peruLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        peruLayout.setVerticalGroup(
-            peruLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(peru, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 350, 40, 20));
-
-        chile.setBackground(new java.awt.Color(155, 224, 158));
-        chile.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        chile.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout chileLayout = new javax.swing.GroupLayout(chile);
-        chile.setLayout(chileLayout);
-        chileLayout.setHorizontalGroup(
-            chileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        chileLayout.setVerticalGroup(
-            chileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(chile, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, 30, 20));
-
-        argentina.setBackground(new java.awt.Color(155, 224, 158));
-        argentina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        argentina.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout argentinaLayout = new javax.swing.GroupLayout(argentina);
-        argentina.setLayout(argentinaLayout);
-        argentinaLayout.setHorizontalGroup(
-            argentinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        argentinaLayout.setVerticalGroup(
-            argentinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(argentina, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, 30, 20));
-
-        uruguay.setBackground(new java.awt.Color(155, 224, 158));
-        uruguay.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        uruguay.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout uruguayLayout = new javax.swing.GroupLayout(uruguay);
-        uruguay.setLayout(uruguayLayout);
-        uruguayLayout.setHorizontalGroup(
-            uruguayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-        uruguayLayout.setVerticalGroup(
-            uruguayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 18, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(uruguay, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, 30, 20));
-
-        antartida.setBackground(new java.awt.Color(0, 0, 0));
-        antartida.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        antartida.setForeground(new java.awt.Color(255, 204, 0));
-
-        javax.swing.GroupLayout antartidaLayout = new javax.swing.GroupLayout(antartida);
-        antartida.setLayout(antartidaLayout);
-        antartidaLayout.setHorizontalGroup(
-            antartidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 38, Short.MAX_VALUE)
-        );
-        antartidaLayout.setVerticalGroup(
-            antartidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(antartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, 40, 30));
+        brasil.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        getContentPane().add(brasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 50, 20));
 
         islandia.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         getContentPane().add(islandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 50, 20));
@@ -373,31 +68,15 @@ public class MapaMundoInterfaz  extends javax.swing.JFrame implements Observer{
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel alaska;
-    private javax.swing.JPanel antartida;
-    private javax.swing.JPanel argentina;
-    private javax.swing.JPanel brasil;
-    private javax.swing.JPanel california;
-    private javax.swing.JPanel canada;
-    private javax.swing.JPanel chile;
-    private javax.swing.JPanel colombia;
-    private javax.swing.JPanel groenlandia;
+    private javax.swing.JLabel brasil;
     private javax.swing.JLabel islandia;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel labrador;
-    private javax.swing.JPanel mexico;
-    private javax.swing.JPanel nuevayork;
-    private javax.swing.JPanel oregon;
-    private javax.swing.JPanel peru;
-    private javax.swing.JPanel terranova;
-    private javax.swing.JPanel uruguay;
-    private javax.swing.JPanel yukon;
     // End of variables declaration//GEN-END:variables
 //lo que hace el update es asignarle a cada boton la info del territorio que necesite
     
     public void update(ArrayList <Territorio> territorios) {
 
-                islandia.setText("hola probando");
+                brasil.setText("hola probando");
 		//islandia.setText(String.valueOf(territorios.get(1).getEjercitos()));
               //  groenlandia.setText("groenlandia");
 
